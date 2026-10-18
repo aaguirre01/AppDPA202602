@@ -75,6 +75,14 @@ fun DrawerScaffold(
                     }
                 )
 
+                NavigationDrawerItem(
+                    label = { Text(" Supabase Storage") },
+                    selected = false,
+                    onClick = {
+                        navController.navigate("supabase")
+                    }
+                )
+
             }
         }
     ) {

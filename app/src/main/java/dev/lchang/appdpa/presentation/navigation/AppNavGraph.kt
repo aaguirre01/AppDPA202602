@@ -9,6 +9,7 @@ import dev.lchang.appdpa.presentation.auth.RegisterScreen
 import dev.lchang.appdpa.presentation.home.HomeScreen
 import dev.lchang.appdpa.presentation.permissions.GalleryPermissionsScreen
 import dev.lchang.appdpa.presentation.realtime.FirestoreRealtimeScreen
+import dev.lchang.appdpa.presentation.supabase.SupabaseStorageScreen
 
 @Composable
 fun AppNavGraph(){
@@ -33,6 +34,11 @@ fun AppNavGraph(){
         composable("realtime") {
             DrawerScaffold(navController) {
                 FirestoreRealtimeScreen()
+            }
+        }
+        composable("supabase") {
+            DrawerScaffold(navController) {
+                SupabaseStorageScreen()
             }
         }
     }
