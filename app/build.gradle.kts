@@ -67,6 +67,14 @@ dependencies {
     implementation(libs.ktor.client.core)
     implementation(libs.ktor.client.cio)
 
+    //Retrofit
+    implementation(libs.retrofit)
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:5.5.1")
+
+
+
+
 
 
 
